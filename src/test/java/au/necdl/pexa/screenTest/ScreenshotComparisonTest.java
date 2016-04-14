@@ -15,6 +15,12 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.Collection;
 
+/**
+ * Created by Rebecca Abriam
+ *
+ * This test class is created as attempt to use screenCompare as part of build.
+ */
+
 @RunWith(Parameterized.class)
 public class ScreenshotComparisonTest {
     private static final String REFERENCE_DIR_NAME = "reference-images";
@@ -29,13 +35,8 @@ public class ScreenshotComparisonTest {
         differenceFile = f3;
     }
 
-//    @Parameter
     private File referenceFile;
-
-//    @Parameter
     private File candidateFile;
-
-//    @Parameter
     private File differenceFile;
 
     @Parameters
@@ -57,7 +58,6 @@ public class ScreenshotComparisonTest {
     public void compareScreenshotsTest() throws Exception {
         FileBasedImageComparison tester = new FileBasedImageComparison();
 //        boolean result = tester.compare(referenceFile, candidateFile, differenceFile);
-//        System.out.println("**** Compare screenshot [" + referenceFile.getName() + "]: " + result);
 //        assertTrue("**** Image:  [" + referenceFile.getAbsolutePath() + "]", tester.compare(referenceFile, candidateFile, differenceFile));
         assertTrue(true);
     }
