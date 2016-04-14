@@ -17,12 +17,12 @@ public class ScreenshotComparison {
 
         DirectoryBasedImageComparison dirBasedImageComparison = new DirectoryBasedImageComparison(referenceDir, candidateDir);
         ComparisonResults results = dirBasedImageComparison.compare();
-        for (ComparisonResult result : results.getComparisonResults()) {
-            if (result.isPassed()) {
-
-            } else {
-
-            }
-        }
+//        for (ComparisonResult result : results.getComparisonResults()) {
+//            if (result.isPassed()) {
+//
+//            } else {
+//
+//            }
+//        }
     }
 }

@@ -75,7 +75,7 @@ public class DirectoryBasedImageComparison {
     }
 
     private File getCandidateImage(File referenceImage) {
-        return new File(referenceImage.getAbsolutePath().replaceAll(this.referenceDir.getAbsolutePath(), this.candidateDir.getAbsolutePath()));
+        return new File(referenceImage.getAbsolutePath().replaceAll("\\\\", "/").replaceAll(this.referenceDir.getAbsolutePath().replaceAll("\\\\", "/"), this.candidateDir.getAbsolutePath().replaceAll("\\\\", "/")));
     }
 
     private File createDiffImage(File candidateImage) {

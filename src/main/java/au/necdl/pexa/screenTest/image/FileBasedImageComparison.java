@@ -68,7 +68,7 @@ public class FileBasedImageComparison {
         //checkImageMagicInstalled();
         String commandStr = "compare " + getCompareArgsUsingFile(referenceFile, candidateFile, diffImage);
 
-        ProcessBuilder pb = new ProcessBuilder("sh", "-c", commandStr);
+        ProcessBuilder pb = new ProcessBuilder("cmd", "/c", commandStr);
 
 //        System.out.println("Comparing using compare args: " + getCompareArgsUsingFile());
         println("\nCompare reference and candidate images: " + referenceFile.getName());
@@ -95,7 +95,7 @@ public class FileBasedImageComparison {
     }
 
     public void composeDiffImage(File referenceImage, File candidateImage, File diffImage) throws Exception {
-        ProcessBuilder pb = new ProcessBuilder("sh", "-c", "composite " + referenceImage.getAbsolutePath() + " " + candidateImage.getAbsolutePath() + " -compose difference " + diffImage.getAbsolutePath());
+        ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "composite " + referenceImage.getAbsolutePath() + " " + candidateImage.getAbsolutePath() + " -compose difference " + diffImage.getAbsolutePath());
         executeCommand(pb);
     }
 
