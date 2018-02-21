@@ -1,12 +1,10 @@
-package au.necdl.pexa.screenTest;
+package mairbar.screenTest;
 
-import au.necdl.pexa.screenTest.image.FileBasedImageComparison;
-import org.junit.BeforeClass;
+import mairbar.screenTest.image.FileBasedImageComparison;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
-import org.junit.runners.Parameterized.Parameter;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

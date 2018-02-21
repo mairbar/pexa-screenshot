@@ -1,13 +1,8 @@
-package au.necdl.pexa.screenTest.image;
+package mairbar.screenTest.image;
 
 import java.util.*;
 
-import com.google.common.base.Predicate;
-import com.google.common.collect.Collections2;
-import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
-
-import static com.google.common.collect.Collections2.filter;
 
 /**
  * Created by Rebecca Abriam

@@ -1,9 +1,9 @@
-package au.necdl.pexa.screenTest.image;
+package mairbar.screenTest.image;
 
 import com.google.common.io.Files;
 
 import java.io.File;
-import static au.necdl.pexa.screenTest.utils.Utils.println;
+import static mairbar.screenTest.utils.Utils.println;
 
 /**
  * Created by Rebecca Abriam.

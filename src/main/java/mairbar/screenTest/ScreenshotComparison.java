@@ -1,18 +1,14 @@
-package au.necdl.pexa.screenTest;
+package mairbar.screenTest;
 
-import au.necdl.pexa.screenTest.image.ComparisonResult;
-import au.necdl.pexa.screenTest.image.ComparisonResults;
-import au.necdl.pexa.screenTest.image.DirectoryBasedImageComparison;
-import au.necdl.pexa.screenTest.image.FileBasedImageComparison;
-
-import java.io.IOException;
+import mairbar.screenTest.image.ComparisonResults;
+import mairbar.screenTest.image.DirectoryBasedImageComparison;
 
 public class ScreenshotComparison {
     public static void main( String[] args ) throws Exception {
         String referenceDir = "reference-images";
         String candidateDir = "candidate-images";
 
-//        FileBasedImageComparison fileBasedImageComparison = new FileBasedImageComparison("reference-images/pexa-1.png", "candidate-images/pexa-1.png", "candidate-images/pexa-diff-becs.png");
+//        FileBasedImageComparison fileBasedImageComparison = new FileBasedImageComparison("reference-images/test-1.png", "candidate-images/test-1.png", "candidate-images/test-diff-becs.png");
 //        fileBasedImageComparison.compare();
 
         DirectoryBasedImageComparison dirBasedImageComparison = new DirectoryBasedImageComparison(referenceDir, candidateDir);

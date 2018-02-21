@@ -1,7 +1,8 @@
-package au.necdl.pexa.screenTest.image;
+package mairbar.screenTest.image;
 
 import java.io.*;
-import static au.necdl.pexa.screenTest.utils.Utils.println;
+
+import mairbar.screenTest.utils.Utils;
 
 /**
  * Created by Rebecca Abriam.
@@ -71,8 +72,8 @@ public class FileBasedImageComparison {
         ProcessBuilder pb = new ProcessBuilder("cmd", "/c", commandStr);
 
 //        System.out.println("Comparing using compare args: " + getCompareArgsUsingFile());
-        println("\nCompare reference and candidate images: " + referenceFile.getName());
-        println(commandStr);
+        Utils.println("\nCompare reference and candidate images: " + referenceFile.getName());
+        Utils.println(commandStr);
 
         Process p = pb.start();
         int errCode = p.waitFor();

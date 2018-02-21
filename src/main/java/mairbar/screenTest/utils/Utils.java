@@ -1,4 +1,4 @@
-package au.necdl.pexa.screenTest.utils;
+package mairbar.screenTest.utils;
 
 /**
  * Created by Rebecca Abriam.

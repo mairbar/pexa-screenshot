@@ -1,4 +1,4 @@
-package au.necdl.pexa.screenTest.image;
+package mairbar.screenTest.image;
 
 import java.io.File;
 
